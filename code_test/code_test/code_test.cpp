@@ -13,7 +13,7 @@ int main()
 	setlocale(LC_ALL,"Russian");
 	int x;
 
-	
+	alg_sum();
 	
     return 0;
 }

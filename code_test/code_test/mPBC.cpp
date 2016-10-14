@@ -1,7 +1,8 @@
-#include "mPBC.h"
+
 #include "stdafx.h"
 #include <iostream>
 #include <iomanip>
+#include "mPBC.h"
 using namespace std;
 //mPBC.cpp 
 //Arrays options: 
@@ -105,4 +106,37 @@ void dlt_arr(int** A, int m) {
 		}
 	}
 	else err_msg();
+}
+
+//Exircise
+
+//Найти Y, если Y = X1 + X2 + … + Xn, X = Z ^ 3 - B + A ^ 2 / tg ^ 2 ? .
+//Количество X вводятся пользователем программы.
+//Для каждого X значения Z, B, А, ? разные(вводятся пользователем программы).
+void alg_sum() {
+	float y = 0.0;
+	int z, a, b, alpha, user_x;
+	cout << "Пожалуйста, введите кол-во иксов: ";
+	cin >> user_x;
+	int* x = new int[user_x];
+
+	for (int i = 0; i != user_x; i++) {
+		cout << "\nВведите значение Z для X " << i + 1 << ": ";
+		cin >> z;
+		cout << "\nВведите значение B для X " << i + 1 << ": ";
+		cin >> b;
+		cout << "\nВведите значение A для X " << i + 1 << ": ";
+		cin >> a;
+		cout << "\nВведите значение alpha для X " << i + 1 << " : ";
+		cin >> alpha;
+		x[i] = pow(z, 3) - b + (pow(a, 2) / pow(alpha, 2));
+	}
+
+
+	for (int i = 0; i != user_x; i++) {
+		y += x[i];
+	}
+
+	cout << "\y = " << y << endl;
+	
 }

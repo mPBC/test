@@ -24,7 +24,7 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Visual Studio 2015\Projects\arrays_options\arrays_options\mPBC.h">
+    <ClInclude Include="mPBC.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -35,7 +35,7 @@
     <ClCompile Include="code_test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Visual Studio 2015\Projects\arrays_options\arrays_options\mPBC.cpp">
+    <ClCompile Include="mPBC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -28,3 +28,6 @@ void dlt_arr(int** A, int m);
 
 // ------ERROR-------
 void err_msg();
+
+//exercise
+void alg_sum();
